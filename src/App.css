@@ -1,38 +1,83 @@
-.App {
+html * {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: darkgrey;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavContainer {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menuItems {
+  display: inline;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightblue;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  color:darkblue;
+  font-style: normal;
+  position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  width: 500px;
+  border: 2px solid lightblue;
+  position: center;
+}
+
+form > ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+form-label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+form input, textarea {
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid darkblue;
+}
+
+form input:focus, textarea:focus {
+  border-color:rgb(226, 214, 43);
+}
+
+form textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.Button {
+  position: center;
+  border-style: none;
+  border-radius: 2em;
+  font-size: 20px;
 }

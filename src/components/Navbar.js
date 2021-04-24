@@ -1,16 +1,19 @@
 import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Nav, Navbar} from 'react-bootstrap';
 
 export default class Navigationbar extends React.Component {
     render() {
         return ( 
-            <div className="container">
+            <div className="NavContainer">
                 <Navbar bg="dark" variant="dark" expand="medium">
-                    <Nav variant="pills" defaultActiveKey="/home">
-                        <Nav.Link href="/home">Active</Nav.Link>
-                        <Nav.Link eventKey="link-1">Option 1</Nav.Link>
-                        <Nav.Link eventKey="link-2">Option 2</Nav.Link>
-                    </Nav>
+                    <div id="nav_bar">
+                        <ul>
+                            <li className="menuItems"><a href="">Home</a></li>
+                            <li className="menuItems"><a href="">Today</a></li>
+                            <li className="menuItems"><a href="">Tomorrow</a></li>
+                            <li className="menuItems"><a href="">Year</a></li>
+                        </ul>
+                    </div>
                 </Navbar>
             </div>
         );   
